@@ -7,13 +7,13 @@ using Microsoft.Extensions.Hosting;
 using System.Threading.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 using System.Configuration;
-
-
-
-
-      
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+//DBcontect file
+
 
 
 
@@ -23,10 +23,9 @@ var builder = WebApplication.CreateBuilder(args);
     // Add services to the container.
     builder.Services.AddControllersWithViews();
 
-    builder.Services.AddDbContext<appdbcontext>(option => option.UseSqlServer(
+    builder.Services.AddDbContext<Appdbcontext>(option =>option.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnectionString"))
     );
-
     builder.Services.AddMvc();
 
     builder.Services.AddControllersWithViews();
