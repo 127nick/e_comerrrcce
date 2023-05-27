@@ -1,5 +1,4 @@
-﻿using onticket.@enum;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace onticket.Models
 {
@@ -9,6 +8,7 @@ namespace onticket.Models
         public Movie movie { get; set; }
         public int Actorid { get; set; }
         public actor actor { get; set; }
+
 
 
 

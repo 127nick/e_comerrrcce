@@ -1,8 +1,4 @@
-﻿
-
-
-using onticket.@enum;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace onticket.Models

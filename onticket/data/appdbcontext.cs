@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using onticket.@enum;
 using onticket.Models;
 
 namespace onticket.data

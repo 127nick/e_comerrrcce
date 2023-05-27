@@ -1,6 +1,6 @@
-﻿namespace onticket.data
+﻿namespace onticket.@enum
 {
-    public enum moviecat
+    public enum Moviecat
 
     {
         Action,

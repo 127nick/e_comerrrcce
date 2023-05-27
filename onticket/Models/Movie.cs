@@ -1,9 +1,8 @@
-﻿using onticket.data;
-using onticket.Models;
+﻿using onticket.@enum;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace onticket.@enum
+namespace onticket.Models
 {
     public class Movie
     {
@@ -15,7 +14,7 @@ namespace onticket.@enum
         public DateTime enddate { get; set; }
         public double price { get; set; }
         public string imageurl { get; set; }
-        public moviecat moviecat { get; set; }
+        public Moviecat moviecat { get; set; }
         public List<actor_movie> actor_Movies { get; set; }
 
         public int CinemaId { get; set; } // Change property name to "CinemaId" instead of "Cinema"
